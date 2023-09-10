@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <title>Todo App</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1>Todo リスト</h1>
+    <form class="todoForm">
+      <input type="text" id="form-input"/>
+      <button type="submit">保存</button>
+    </form>
+    <div class="count"> 
+      <span class="allItem">全てのタスク:0</span>
+      <span class="completeItem">完了済み:0</span>
+      <span class="incompleteItem">未完了:0</span>
+    </div>
+    <ul class="todoList"></ul>
+
+    <script type="module" src="index.js"></script>
+  </body>
+</html>

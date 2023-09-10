@@ -1,0 +1,79 @@
+h1 {
+    font-size: 55px;
+    text-align: center;
+}
+
+.todoForm {
+    text-align: center;
+}
+
+.todoForm input[id="form-input"] {
+    font-size: 28px;
+    width: 700px;
+    height: 35px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.todoForm button {
+    border-radius: 5px;
+    font-size: 28px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.todoForm button:hover {
+    background-color: #C0C0C0;
+}
+
+.todoList{
+    font-size: 30px;
+}
+
+.todoList li{
+    list-style:none;
+    display: flex;
+    border: 1px solid #000;
+    padding: 5px;
+}
+
+.todoList > li > button {
+    border-radius: 5px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+    font-size: 20px;
+    list-style:none;
+    margin-right: 10px;
+}
+
+.todoList > li > button:hover {
+    background-color: #C0C0C0; 
+}
+
+.todoList > li > span {
+    margin: 0 10px;
+    flex-grow: 1;
+}
+
+.editFormInputStyle {
+    font-size: 28px;
+    width: 700px;
+    height: 35px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.editButtonStyle {
+    text-size: 30px;
+}
+
+.deleteButtonStyle {
+    margin-left: 6px;
+}
+
+.count {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.count .allItem, .count .completeItem, .count .incompleteItem {
+    margin: 0 20px;
+    font-weight: 550;
+}
