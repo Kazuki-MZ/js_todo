@@ -12,7 +12,7 @@ const createCheckBox = () => {
       ...checkedItem,
       checked: !checkedItem.checked
     };
-    updateTodos(newCheckedItem, checkedItemId);
+    updateTodos(newCheckedItem);
   });
   return checkbox;
 }
@@ -72,16 +72,16 @@ const createEditForm = (editItem, itemElement) => {
       ...editItem,
       text: editText
     };
-    updateTodos(newEditItem, parseInt(itemElement.id));
+    updateTodos(newEditItem);
   })
 }
 
 //配列更新処理
-const updateTodos = (newItem, id) => {
-  const itemIndex = todos.findIndex((item) => item.id === id);
-    todos.splice(itemIndex, 1, newItem);
-    localStorage.setItem('todos', JSON.stringify(todos));
-    location.reload();
+const updateTodos = (newItem) => {
+  const itemIndex = todos.findIndex((item) => item.id === newItem.id);
+  todos.splice(itemIndex, 1, newItem);
+  localStorage.setItem('todos', JSON.stringify(todos));
+  location.reload();
 };
 
 //itemElement作成
